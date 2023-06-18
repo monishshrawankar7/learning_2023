@@ -1,5 +1,31 @@
 #include <stdio.h>
 
+<<<<<<< HEAD
+int countSetBits(int arr[], int size) {
+    int totalBits = 0;
+
+    for (int i = 0; i < size; i++) {
+        int num = arr[i];
+        int count = 0;
+
+        while (num > 0) {
+            count += num & 1;
+            num >>= 1;
+        }
+
+        totalBits += count;
+    }
+
+    return totalBits;
+}
+
+int main() {
+    int arr[] = {0x1, 0xF4, 0x10001};
+    int size = sizeof(arr) / sizeof(arr[0]);
+
+    int result = countSetBits(arr, size);
+    printf("Total number of set bits: %d\n", result);
+=======
 int main() {
     float num1, num2, result;
     char operator;
@@ -40,6 +66,7 @@ int main() {
 
     // Print the result
     printf("Result: %.2f\n", result);
+>>>>>>> d5e6a9bc08bfb798d86917557fecd9ec5127962d
 
     return 0;
 }
