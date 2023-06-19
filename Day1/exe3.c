@@ -1,5 +1,23 @@
 #include <stdio.h>
 
+<<<<<<< HEAD
+int sumAlternateElements(int arr[], int size) {
+    int sum = 0;
+    
+    for (int i = 0; i < size; i += 2) {
+        sum += arr[i];
+    }
+    
+    return sum;
+}
+
+int main() {
+    int arr[] = {10, 20, 30, 40, 50};
+    int size = sizeof(arr) / sizeof(arr[0]);
+
+    int result = sumAlternateElements(arr, size);
+    printf("Sum of alternate elements: %d\n", result);
+=======
 int main() {
     int rollNo;
     char name[50];
@@ -35,6 +53,7 @@ int main() {
     printf("Chemistry Marks: %.2f\n", chemistryMarks);
     printf("Total Marks: %.2f\n", totalMarks);
     printf("Percentage: %.2f%%\n", percentage);
+>>>>>>> d5e6a9bc08bfb798d86917557fecd9ec5127962d
 
     return 0;
 }
